@@ -4,21 +4,34 @@
 @font-face { font-family: "Inter Tight"; src: url("font/inter-tight-700.woff2") format("woff2"); font-weight: 700; font-display: swap; }
 
 :root {
-  --bg: #fafaf9; --card: #ffffff; --ink: #18181b; --muted: #71717a; --soft: #a1a1aa; --rule: #e7e5e4; --hover: #f4f4f2;
+  --bg: #f3f5ef; --card: #ffffff; --ink: #18181b; --muted: #71717a; --soft: #a1a1aa; --rule: #e7e5e4; --hover: #f4f4f2;
   --accent: #2f6b45; --accent-soft: #e8f0ea;
   --display: "Inter Tight", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color-scheme: light;
 }
-body.politica { --accent: #1d4a96; --accent-soft: #e8eef8; }
+body.politica { --accent: #1d4a96; --accent-soft: #e3eaf7; --bg: #f0f3f9; }
+/* Sfondo: due macchie di colore sfumate + trama a puntini nella parte alta */
+:root { --macchia1: rgba(47,107,69,.34); --macchia2: rgba(233,186,90,.42); --macchia3: rgba(47,107,69,.16); --puntini: rgba(24,24,27,.12); }
+body.politica { --macchia1: rgba(29,74,150,.32); --macchia2: rgba(120,170,235,.40); --macchia3: rgba(196,22,42,.10); }
 @media (prefers-color-scheme: dark) {
+  :root { --macchia1: rgba(127,193,150,.14); --macchia2: rgba(233,186,90,.10); --macchia3: rgba(127,193,150,.05); --puntini: rgba(255,255,255,.07); }
+  body.politica { --macchia1: rgba(141,178,243,.16); --macchia2: rgba(120,170,235,.10); --macchia3: rgba(240,96,111,.05); }
   :root { --bg: #0f0f10; --card: #18181b; --ink: #f4f4f5; --muted: #a1a1aa; --soft: #71717a; --rule: #27272a; --hover: #18181b; --accent: #7fc196; --accent-soft: #16241b; color-scheme: dark; }
   body.politica { --accent: #8db2f3; --accent-soft: #141e33; }
 }
 
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
-body { margin: 0; background: var(--bg); color: var(--ink); font: 16.5px/1.7 var(--sans); -webkit-font-smoothing: antialiased; }
+body { margin: 0; position: relative; min-height: 100vh; background:
+    radial-gradient(1000px 700px at 6% -6%, var(--macchia1), transparent 70%),
+    radial-gradient(900px 640px at 98% 2%, var(--macchia2), transparent 70%),
+    radial-gradient(1000px 700px at 50% 105%, var(--macchia3), transparent 70%),
+    var(--bg); color: var(--ink); font: 16.5px/1.7 var(--sans); -webkit-font-smoothing: antialiased; }
+body::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 760px; pointer-events: none; z-index: -1;
+  background-image: radial-gradient(var(--puntini) 1px, transparent 1.2px); background-size: 22px 22px;
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, transparent 100%); mask-image: linear-gradient(to bottom, #000 0%, transparent 100%); }
+body { isolation: isolate; }
 a { color: inherit; text-decoration: none; }
 a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 8px; }
 .wrap { max-width: 980px; margin: 0 auto; padding: 0 28px; }
@@ -41,7 +54,7 @@ nav.pagine a[aria-current="page"] { background: var(--ink); color: var(--bg); }
 h1 { font: 700 clamp(38px, 5.6vw, 60px)/1 var(--display); letter-spacing: -.035em; margin: 0 0 22px; }
 .bio { font-size: 19px; line-height: 1.7; color: var(--muted); margin: 0; max-width: 31em; text-wrap: pretty; }
 .bio strong { color: var(--ink); font-weight: 600; }
-.foto { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 24px; background: var(--rule); }
+.foto { width: 100%; aspect-ratio: 4/5; object-fit: cover; border-radius: 24px; background: var(--rule); box-shadow: 0 30px 60px -30px rgba(0,0,0,.45), 0 0 0 6px rgba(255,255,255,.55); }
 
 /* Sezioni */
 section.blocco { display: grid; grid-template-columns: 200px 1fr; gap: 32px; padding: 44px 0; border-top: 1px solid var(--rule); }
@@ -50,7 +63,7 @@ h2 b { color: var(--ink); font-weight: 600; display: block; font-size: 15px; }
 
 ul.elenco { list-style: none; margin: 0; padding: 0; }
 ul.elenco a, ul.elenco .riga { display: grid; grid-template-columns: 1fr auto; gap: 2px 24px; padding: 16px 18px; margin: 0 -18px; border-radius: 16px; transition: background-color .15s; }
-ul.elenco a:hover { background: var(--card); box-shadow: 0 0 0 1px var(--rule); }
+ul.elenco a:hover { background: color-mix(in srgb, var(--card) 85%, transparent); box-shadow: 0 0 0 1px var(--rule), 0 10px 30px -18px rgba(0,0,0,.25); }
 .titolo { font: 600 19px/1.35 var(--display); letter-spacing: -.015em; }
 .desc { grid-column: 1; color: var(--muted); font-size: 15.5px; line-height: 1.6; max-width: 36em; }
 .dove { grid-column: 2; grid-row: 1; align-self: center; font: 500 14px var(--display); color: var(--soft); white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; transition: color .15s; }
