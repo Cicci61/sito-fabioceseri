@@ -18,7 +18,7 @@ body.politica { --macchia1: rgba(29,74,150,.32); --macchia2: rgba(120,170,235,.4
   :root { --macchia1: rgba(127,193,150,.14); --macchia2: rgba(233,186,90,.10); --macchia3: rgba(127,193,150,.05); --puntini: rgba(255,255,255,.07); }
   body.politica { --macchia1: rgba(141,178,243,.16); --macchia2: rgba(120,170,235,.10); --macchia3: rgba(240,96,111,.05); }
   :root { --bg: #0f0f10; --card: #18181b; --ink: #f4f4f5; --muted: #a1a1aa; --soft: #71717a; --rule: #27272a; --hover: #18181b; --accent: #7fc196; --accent-soft: #16241b; color-scheme: dark; }
-  body.politica { --accent: #8db2f3; --accent-soft: #141e33; }
+  body.politica { --accent: #8db2f3; --accent-soft: #141e33; --bg: #0d1320; --card: #141c2c; --rule: #243149; }
 }
 
 * { box-sizing: border-box; }
@@ -132,6 +132,8 @@ footer p { margin: 0; }
 .art-fonte a { color: var(--accent); }
 .art-condividi { margin-top: 28px; }
 .art-indietro { display: inline-block; margin-top: 18px; font: 500 15px var(--display); color: var(--accent); }
+
+@media (prefers-color-scheme: dark) { .foto { box-shadow: 0 30px 60px -30px rgba(0,0,0,.7), 0 0 0 6px rgba(255,255,255,.08); } }
 
 /* Pagina politica: testo più scuro e più marcato (richiesta di Fabio) */
 body.politica .bio { color: var(--ink); font-weight: 500; }
