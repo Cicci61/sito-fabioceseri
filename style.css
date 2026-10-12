@@ -132,3 +132,9 @@ footer p { margin: 0; }
 .art-fonte a { color: var(--accent); }
 .art-condividi { margin-top: 28px; }
 .art-indietro { display: inline-block; margin-top: 18px; font: 500 15px var(--display); color: var(--accent); }
+
+/* Pagina politica: testo più scuro e più marcato (richiesta di Fabio) */
+body.politica .bio { color: var(--ink); font-weight: 500; }
+body.politica .bio strong { font-weight: 700; }
+body.politica .desc { color: color-mix(in srgb, var(--ink) 78%, var(--muted)); font-weight: 450; }
+body.politica .titolo { font-weight: 700; }
