@@ -16,7 +16,9 @@
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="it_IT">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="img/copertina.jpg">
+<link rel="icon" type="image/png" sizes="32x32" href="img/icona-32.png">
+<link rel="icon" type="image/svg+xml" href="img/simbolo.svg">
+<link rel="apple-touch-icon" href="img/icona-180.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -51,7 +53,9 @@ img{max-width:100%;height:auto;display:block}
 /* menu */
 .nav{position:absolute;top:0;left:0;right:0;z-index:5}
 .nav .wrap{display:flex;justify-content:space-between;align-items:center;padding-top:22px}
-.marchio{font-family:var(--sans);font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--carta-2);text-decoration:none}
+.marchio{display:flex;align-items:center;gap:12px;text-decoration:none;color:#f6eedd;font-family:var(--serif);font-size:21px;letter-spacing:.01em}
+.marchio img{width:42px;height:42px}
+.logo-progetto{width:84px;height:84px;margin:0 0 18px}
 .nav ul{list-style:none;display:flex;gap:26px;margin:0;padding:0;font-family:var(--sans);font-size:14px}
 .nav ul a{color:var(--carta-2);text-decoration:none}
 .nav ul a:hover{color:var(--carta)}
@@ -147,12 +151,13 @@ footer a{color:var(--carta-2)}
 <body>
 
 <nav class="nav"><div class="wrap">
-  <a class="marchio" href="https://fabioceseri.it/">← Fabio Ceseri</a>
+  <a class="marchio" href="./"><img src="img/simbolo.svg" alt="" width="42" height="42">Vite ritrovate</a>
   <ul>
     <li><a href="#libro">Il libro</a></li>
     <li><a href="#progetto">Il progetto</a></li>
     <li><a href="#aiuto">Chiedere aiuto</a></li>
     <li><a href="#scrivimi">Scrivimi</a></li>
+    <li><a href="https://fabioceseri.it/">Fabio Ceseri</a></li>
   </ul>
 </div></nav>
 
@@ -211,6 +216,7 @@ footer a{color:var(--carta-2)}
 <section id="progetto" class="fascia-2">
   <div class="wrap">
     <div class="testo">
+      <img class="logo-progetto" src="img/simbolo.svg" alt="Logo di Vite ritrovate: un sentiero che sale verso una stella" width="84" height="84">
       <p class="etichetta">Il progetto</p>
       <h2>Vite ritrovate</h2>
       <p>Una collana di storie vere: persone che sono cadute e si sono rialzate. Chi sta attraversando lo stesso buio spesso pensa di essere solo. Leggere che qualcuno ce l'ha fatta può essere il primo passo per chiedere aiuto.</p>
