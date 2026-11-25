@@ -140,3 +140,26 @@ body.politica .bio { color: var(--ink); font-weight: 500; }
 body.politica .bio strong { font-weight: 700; }
 body.politica .desc { color: color-mix(in srgb, var(--ink) 78%, var(--muted)); font-weight: 450; }
 body.politica .titolo { font-weight: 700; }
+
+/* Servizi e prezzi (vetrina, 25/11/2026) */
+.hero-azioni { margin-top: 26px; }
+.sv-intro { margin: 10px 0 18px; color: var(--muted); font-size: 16px; max-width: 36em; }
+.sv-griglia { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.sv { display: flex; flex-direction: column; background: var(--card); border: 1px solid var(--rule); border-radius: 20px; padding: 20px 22px 18px; }
+.sv-num { align-self: flex-start; font: 700 12.5px var(--display); color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 2px 10px; margin-bottom: 8px; }
+.sv h3 { font: 600 21px/1.25 var(--display); letter-spacing: -.015em; margin: 0; }
+.sv-per { color: var(--muted); font-size: 14.5px; line-height: 1.5; margin: 4px 0 10px; }
+.sv-prezzo { font: 700 26px/1.2 var(--display); color: var(--accent); margin: 0; letter-spacing: -.01em; }
+.sv-prezzo span { font: 500 14px var(--sans); color: var(--muted); letter-spacing: 0; }
+.sv-nota { font-size: 14px; color: var(--muted); margin: 4px 0 0; line-height: 1.5; }
+.sv-nota b { color: var(--ink); }
+.sv ul { margin: 12px 0 14px; padding-left: 18px; font-size: 15px; line-height: 1.55; }
+.sv li { margin: 3px 0; }
+.sv-caso { margin: auto 0 0; background: var(--accent-soft); border-radius: 12px; padding: 10px 13px; font-size: 14px; line-height: 1.5; }
+.sv-caso strong { color: var(--accent); }
+.sv-caso a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
+.sv-come { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 22px 0 6px; font-size: 15px; line-height: 1.55; color: var(--muted); }
+.sv-come b { display: block; font: 600 16px var(--display); color: var(--ink); margin-bottom: 2px; }
+.sv-azioni { margin-top: 18px; }
+.sv-piccolo { margin: 12px 0 0; font-size: 13.5px; color: var(--soft); }
+@media (max-width: 820px) { .sv-griglia, .sv-come { grid-template-columns: 1fr; } }
