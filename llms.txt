@@ -1,0 +1,33 @@
+# Fabio Ceseri
+
+> Strumenti digitali, comunicazione e consulenza di intelligenza artificiale per le attività del Mugello (Toscana, provincia di Firenze). Fabio Ceseri è nato a Borgo San Lorenzo, vive in Mugello ed è redattore di Radio Mugello. Ha costruito e aggiorna con l'aiuto dell'IA sette siti di servizio sul Mugello.
+
+Contatti: ceseri@gmail.com, telefono 339 376 7210. La prima consulenza è gratuita fino al 31 dicembre 2026. Prezzi finali, senza IVA da aggiungere.
+
+## Servizi e prezzi
+
+- [Farsi trovare](https://fabioceseri.it/#servizi): Sito e scheda Google, per chi un sito non ce l'ha o ne ha uno fermo da anni. 600 € una volta; 240 € all'anno per la gestione.
+- [In vetrina sulla guida](https://fabioceseri.it/#servizi): Per ristoranti, bar, alberghi e B&B, su Mangiare e dormire in Mugello. 50 € all'anno, scheda completa; 150 € all'anno, in evidenza; 80 € a evento.
+- [Social in mano](https://fabioceseri.it/#servizi): Facebook e Instagram curati ogni settimana, con un piano chiaro. 300 € al mese.
+- [Un problema, una soluzione](https://fabioceseri.it/#servizi): L'intelligenza artificiale al lavoro nella tua attività, senza doverla studiare. 150 € a problema.
+- [Listino in PDF](https://fabioceseri.it/listino.pdf)
+
+## Progetti
+
+- [mugello.info](https://mugello.info/): il Mugello in una pagina sola, con notizie, meteo, viabilità, eventi, sport, salute, percorsi e Comuni
+- [Mangiare e dormire in Mugello](https://mangiaredormiremugello.it/): guida a ristoranti, bar, alberghi e B&B di Mugello e Val di Sieve
+- [Viabilità Mugello](https://viabilitamugello.it/): lavori stradali, chiusure e deviazioni su mappa
+- [Salute Mugello](https://salutemugello.it/): servizi sanitari e socio-sanitari del Mugello
+- [Calcio Mugello](https://calciomugello.it/): squadre, classifiche e risultati del calcio dilettanti
+- [Mugello Event](https://mugelloeventi.it/): la guida agli eventi del weekend
+
+## Libri
+
+- [Si dice sia il caso](https://fabioceseri.it/vite-ritrovate/): primo volume di Vite ritrovate, la storia vera di un amico
+
+## Blog
+
+- [Recensioni Google: come rispondere bene in due minuti con l'intelligenza artificiale](https://fabioceseri.it/blog/recensioni-google-rispondere-con-intelligenza-artificiale/): Il metodo in tre passi, con la richiesta pronta da copiare: l'IA scrive la bozza, la faccia ce la metti tu.
+- [Libri di scuola in digitale a metà prezzo: la proposta, i numeri e il confronto con le piazze](https://fabioceseri.it/blog/2026-11-20-libri-di-scuola-in-digitale-a-meta-prezzo-la-proposta-i-numeri-e-il-co/): Il Senato ha approvato l'emendamento sugli ebook scolastici a metà prezzo. Quanto spendono le famiglie, cosa ha stanziato il governo per la scuola e cosa chiedono le piazze.
+- [2.135 volte su Google in sette giorni: com'è nato Mangiare e dormire in Mugello](https://fabioceseri.it/blog/mangiare-e-dormire-in-mugello-2135-volte-su-google/): Una guida gratuita a 625 ristoranti, bar, alberghi e B&B di Mugello e Valdisieve, online dal 26 ottobre. I numeri di Google e cosa dicono a chi ha un locale.
+- [Ho creato mugello.info: il Mugello in una pagina sola](https://fabioceseri.it/blog/mugello-info-il-mugello-in-una-pagina-sola/): Notizie, meteo, viabilità, eventi, sport, salute, percorsi e Comuni del Mugello e della Val di Sieve in un unico portale gratuito, aggiornato ogni mezz'ora.
